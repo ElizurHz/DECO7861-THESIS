@@ -1,11 +1,15 @@
 import nltk
+import os
 import math
 import string
 import jieba.posseg as pseg
-from nltk.corpus import stopwords
-from collections import Counter
-from nltk.stem.porter import *
 from sklearn.feature_extraction.text import TfidfVectorizer
+
+def read_file_as_str(user):
+    if not os.path.isfile("user_timeline_" + user + ".txt"):
+        raise TypeError("user_timeline_" + user + ".txt" + " does not exist")
+    all_the_text = open("user_timeline_" + user + ".txt").read()
+    return all_the_text
 
 def get_tokens(text):
     lowers = text.lower()
