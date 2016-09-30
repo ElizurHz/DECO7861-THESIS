@@ -10,7 +10,13 @@ def read_file_as_str(user):
         raise TypeError("user_timeline_" + user + ".txt" + " does not exist")
     all_the_text = open("user_timeline_" + user + ".txt").read()
     return all_the_text
-
+'''
+def read_single_file(filename):
+    if not os.path.isfile(filename):
+        raise TypeError(filename + " does not exist")
+    all_the_text = open(filename).read()
+    return all_the_text
+'''
 def get_tokens(text):
     lowers = text.lower()
     #remove the punctuation using the character deletion step of translate
