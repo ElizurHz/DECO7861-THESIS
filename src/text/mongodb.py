@@ -1,16 +1,15 @@
 from pymongo import *
+from mongoengine import *
 
-def get_db():
-    client = MongoClient('localhost', 27017)
-    db = client['twitter']
-    return db
+connect("twitter")
 
-def get_collection(db, name):
-    collection = db[name]
-    return collection
+class ListMembers(Document):
+    screen_name = StringField(primary_key=True)
+    id_str = StringField(required=True)
+    friends_count = IntField(required=True)
 
-def insert(db, collection, data):
-    col = db[collection]
-    id = col.insert(data)
-    print ("The data " + id + " is inserted.\n")
-
+class Links(Document):
+    user_screen_name = StringField()
+    user_id = StringField()
+    friend_screen_name = StringField()
+    friend_id = StringField()
