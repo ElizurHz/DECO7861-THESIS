@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1587ddc3-b2ba-486c-b3cf-55bebcd4ac70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/to_csv.py" />
+    <list default="true" id="6c022f3b-fd90-4b8a-a013-d8b278b2cf57" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gugudan_ioi_dia-gephi.gephi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cm_network.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gugudan_ioi_dia-modularity.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/rv.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network.py" afterPath="$PROJECT_DIR$/src/network.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/get_links.py" afterPath="$PROJECT_DIR$/src/get_links.py" />
     </list>
     <ignored path="DECO7861-THESIS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,56 +26,25 @@
     <favorites_list name="DECO7861-THESIS" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="network.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/network.py">
+    <leaf>
+      <file leaf-file-name="cm_network.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cm_network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="to_csv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/to_csv.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="get_links.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/get_links.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twitter_client.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/twitter_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="25">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -80,27 +52,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/twitter_client.py" />
-        <option value="$PROJECT_DIR$/my_timeline.py" />
-        <option value="$PROJECT_DIR$/TF-IDF.py" />
-        <option value="$PROJECT_DIR$/Chn_word_seg.py" />
-        <option value="$PROJECT_DIR$/Eng_word_seg.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/src/text/my_timeline.py" />
-        <option value="$PROJECT_DIR$/src/text/get_tweets.py" />
-        <option value="$PROJECT_DIR$/src/text/get_users.py" />
-        <option value="$PROJECT_DIR$/src/text/word_seg.py" />
-        <option value="$PROJECT_DIR$/src/text/user_timeline_LFC.txt" />
-        <option value="$PROJECT_DIR$/src/text/get_timeline.py" />
-        <option value="$PROJECT_DIR$/src/text/LFC_stemmed.txt" />
-        <option value="$PROJECT_DIR$/src/text/text_clustering.py" />
-        <option value="$PROJECT_DIR$/src/text/get_list_members.py" />
-        <option value="$PROJECT_DIR$/src/text/community_detection.py" />
-        <option value="$PROJECT_DIR$/src/text/mongodb.py" />
-        <option value="$PROJECT_DIR$/src/text/get_links.py" />
+        <option value="$PROJECT_DIR$/src/confusion_matrix_network.py" />
         <option value="$PROJECT_DIR$/src/get_links.py" />
-        <option value="$PROJECT_DIR$/src/to_csv.py" />
-        <option value="$PROJECT_DIR$/src/network.py" />
+        <option value="$PROJECT_DIR$/src/cm_network.py" />
       </list>
     </option>
   </component>
@@ -109,25 +63,6 @@
     <option name="width" value="1276" />
     <option name="height" value="800" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Python</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Buildout</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -135,7 +70,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -153,8 +88,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,87 +112,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.network">
-    <configuration default="false" name="text_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/text_clustering.py" />
-      <option name="PARAMETERS" value="elizurhz" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="get_list_members" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/get_list_members.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="community_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/community_detection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="get_links" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/get_links.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="network" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.cm_network">
+    <configuration default="false" name="cm_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -271,7 +133,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/network.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/cm_network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -410,20 +272,12 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.text_clustering" />
-      <item index="1" class="java.lang.String" itemvalue="Python.get_list_members" />
-      <item index="2" class="java.lang.String" itemvalue="Python.community_detection" />
-      <item index="3" class="java.lang.String" itemvalue="Python.get_links" />
-      <item index="4" class="java.lang.String" itemvalue="Python.network" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.cm_network" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.network" />
-        <item index="1" class="java.lang.String" itemvalue="Python.get_links" />
-        <item index="2" class="java.lang.String" itemvalue="Python.community_detection" />
-        <item index="3" class="java.lang.String" itemvalue="Python.get_list_members" />
-        <item index="4" class="java.lang.String" itemvalue="Python.text_clustering" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.cm_network" />
       </list>
     </recent_temporary>
   </component>
@@ -432,34 +286,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1587ddc3-b2ba-486c-b3cf-55bebcd4ac70" name="Default" comment="" />
-      <created>1474345469102</created>
+      <changelist id="6c022f3b-fd90-4b8a-a013-d8b278b2cf57" name="Default" comment="" />
+      <created>1475878031408</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1474345469102</updated>
+      <updated>1475878031408</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="0" width="1276" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3602837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -479,102 +333,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/get_list_members.py">
+    <entry file="file://$PROJECT_DIR$/src/confusion_matrix_network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/text/community_detection.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/mongodb.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/text_clustering.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/LFC_stemmed.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/user_timeline_LFC.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/word_seg.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/twitter_client.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_users.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/text_clustering.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/user_timeline_LFC.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/word_seg.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/twitter_client.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_users.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/TF-IDF.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/TF-IDF.py" />
-    <entry file="file://$PROJECT_DIR$/my_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/twitter_client.py" />
-    <entry file="file://$PROJECT_DIR$/home_timeline.jsonl" />
-    <entry file="file://$PROJECT_DIR$/my_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/Chn_word_seg.py" />
-    <entry file="file://$PROJECT_DIR$/Eng_word_seg.py" />
-    <entry file="file://$PROJECT_DIR$/twitter_client.py" />
-    <entry file="file://$PROJECT_DIR$/word_seg.py" />
-    <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/TF-IDF.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/elizurhz.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/my_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/user_timeline_elizurhz.jsonl" />
-    <entry file="file://$PROJECT_DIR$/src/text/TF-IDF.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_tweets.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/user_timeline_LFC.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/LFC_stemmed.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_users.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/word_seg.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/rv.txt" />
-    <entry file="file://$PROJECT_DIR$/src/text/rv.json" />
-    <entry file="file://$PROJECT_DIR$/src/text/i-o-i.json" />
-    <entry file="file://$PROJECT_DIR$/src/text/gugudan.json" />
-    <entry file="file://$PROJECT_DIR$/src/text/mongodb.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/community_detection.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/text_clustering.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/twitter_client.py" />
-    <entry file="file://$PROJECT_DIR$/src/get_list_members.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/twitter_client.py">
+    <entry file="file://$PROJECT_DIR$/src/cm_network">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/get_links.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/to_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
           <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cm_network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -13,7 +13,7 @@ for user in collection.find(no_cursor_timeout=True):
     friends = current_user.friends()
     for friend in friends:
         for existing_user in collection.find():
-            if (friend.screen_name == existing_user['_id']):
+            if friend.screen_name == existing_user['_id']:
                 print("Creating link between " + user['_id'] + " and " + friend.screen_name)
                 new_link = Links(
                     user_screen_name=user['_id'],
