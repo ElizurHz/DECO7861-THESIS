@@ -4,9 +4,9 @@ with open('gugudan_ioi_dia_modClass.csv', 'r') as csvfile:
     reader1 = csv.reader(csvfile)
     mod_class = [row[2] for row in reader1]
 
-with open('gugudan_ioi_dia_modClass.csv', 'r') as csvfile:
+with open('gugudan_ioi_dia_expClass.csv', 'r') as csvfile:
     reader2 = csv.reader(csvfile)
-    exp_class = [row[3] for row in reader2]
+    exp_class = [row[1] for row in reader2]
 
 del mod_class[0]
 del exp_class[0]

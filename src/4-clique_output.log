@@ -1,0 +1,33 @@
+No.1 Clique to appear:  frozenset({'99mena_1204', 'heimish_hana', 'gu9udan', 'MN_Jeju_Diva', 'kangmina_net', 'flowerroad0828', 'Rabong_Nabee', 'kimsejeongnet', 'orangemina_', 'MIMIBEST100', 'WONGOZE99', 'Kangminahk', 'kangmina_com', 'HANAflower0430', 'ioi_official_', '961023_com', 'kkyul99', 'godsmile0828', 'sejeonggirls', 'GhostCopter', 'myaurora9X9', 'gugudan_fanta', 'MiMiland0101', '951123_402'})
+Current color: b
+
+No.2 Clique to appear:  frozenset({'yebindiary', 'JNmarmelo', 'leesoyul_kr', '970713__com', 'yebinhouse', 'AroundBlue_', 'pinkblossom_kr', 'Spring_C_Y', 'U_Reminiscence', 'Only_Yebins', '971201c', 'do_it_chaeyeon', 'chaeyeon_love', 'khh1995_com', 'baekyebin_kr', 'ioi_official_', 'Chaewon_kr', '19971201_cy', 'dia_official', 'gloryofdecember', '1201jcy', 'petitbonbon_cy', 'always_binss', 'eunstar_jin143', 'YMC_ent', 'hlayk1201', 'luckysevenkr', 'dearsdia', 'lsmin2000', 'khhhome_com', 'merrybin0713', 'DIAbarofficial', 'eusonice0902'})
+Current color: g
+The node ioi_official_ has been in clique No.1
+
+No.3 Clique to appear:  frozenset({'Howfreshyouare', 'Johwahae828_', 'Giyomadol', 'sejeonggirls', 'piglet960828', 'WillBeThereDot', 'sjbaby0828'})
+Current color: r
+The node sejeonggirls has been in clique No.1
+
+No.4 Clique to appear:  frozenset({'InYourShadow00', 'IOI_STUDIO', 'Play_DumbChae', 'Pinky_Flower_'})
+Current color: c
+
+No.5 Clique to appear:  frozenset({'YMC_ent', 'florbonita_ksj', 'ioi_official_', 'godsmile0828'})
+Current color: m
+The node ioi_official_ has been in clique No.1
+The node godsmile0828 has been in clique No.1
+The node YMC_ent has been in clique No.2
+The node ioi_official_ has been in clique No.2
+
+No.6 Clique to appear:  frozenset({'zhoujieqiong_kr', 'YMC_ent', '19981216cc', 'PinkerPinky', 'ioi_official_'})
+Current color: y
+The node ioi_official_ has been in clique No.1
+The node YMC_ent has been in clique No.2
+The node ioi_official_ has been in clique No.2
+The node YMC_ent has been in clique No.5
+The node ioi_official_ has been in clique No.5
+
+No.7 Clique to appear:  frozenset({'EunJin10ver', 'dia_official', 'JoyfulJ_Dot', 'DIAbarofficial', 'Days362'})
+Current color: k
+The node dia_official has been in clique No.2
+The node DIAbarofficial has been in clique No.2
