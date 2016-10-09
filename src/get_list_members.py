@@ -1,11 +1,12 @@
 from twitter_client import get_twitter_client
 import json
-from mongodb import ListMembers
+from mongodb import *
 
 lists = ['gugudan', 'dia', 'i-o-i']
+rv_list = ['rv']
 api = get_twitter_client()
 
-for list in lists:
+for list in rv_list:
     members = api.list_members('elizurhz', list, count=200)
     with open(list + '.json', 'w') as f:
         for member in members:
@@ -13,7 +14,7 @@ for list in lists:
             screen_name = member.screen_name
             id_str = member.id_str
             friends_count = member.friends_count
-            new_profile = ListMembers(
+            new_profile = ListMembersRV(
                 screen_name=screen_name,
                 id_str=id_str,
                 friends_count=friends_count

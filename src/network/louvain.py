@@ -3,7 +3,7 @@ import community
 import matplotlib.pyplot as plt
 import networkx as nx
 
-G = network_construction()
+G = network_construction('twitter', 'links_r_v')
 
 partition = community.best_partition(G)
 pos = nx.spring_layout(G)

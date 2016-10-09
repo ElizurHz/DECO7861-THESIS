@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 client = MongoClient()
 
-def to_csv(filename, database, collection):
+def link_to_csv(filename, database, collection):
     db = client[database]
     col = db[collection]
     with open(filename + '.csv', "w") as f:

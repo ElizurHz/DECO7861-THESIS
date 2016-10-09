@@ -5,10 +5,10 @@ import itertools as it
 
 colors = it.cycle('bgrcmyk')
 
-G = network_construction()
+G = network_construction('twitter', 'links_r_v')
 k = 4
 
-cliques=[clique for clique in nx.k_clique_communities(G, k)]
+cliques = [clique for clique in nx.k_clique_communities(G, k)]
 pos = nx.spring_layout(G)
 labels = {}
 for node in G.node:
@@ -27,6 +27,6 @@ for clique in cliques:
             if node in cliques[i]:
                 print("The node " + node + " has been in clique No." + str(i+1))
     clique_num += 1
-    
+
 nx.draw_networkx_labels(G, pos, labels)
 plt.show()
