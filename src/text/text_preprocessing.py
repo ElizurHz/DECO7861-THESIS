@@ -1,10 +1,53 @@
 import os
 import string
 import nltk
-import jieba.posseg as pseg
 from nltk.corpus import stopwords
 from nltk.stem.porter import *
-from konlpy.corpus import kobill
+
+
+def preprocessing_single_user(dir, user):
+    # read a set of tweets from a single user
+
+    # input: username
+    # output: a list with tweets after stemming
+    tweets = []
+    for line in open('output/' + dir + '/'  + user + "_user_timeline.txt"):
+        line_filtered = re.sub('"', '', line)
+        tweets.append(line_filtered)
+    tweets_stemmed = []
+    for tweet in tweets:
+        tokens = get_tokens(tweet)
+        filtered_tokens = [w for w in tokens if w not in stopwords.words('english')]
+        stemmer = PorterStemmer()
+        stemmed = stem_tokens(filtered_tokens, stemmer)
+        tweets_stemmed.append(stemmed)
+    return tweets_stemmed
+
+
+def preprocessing_multiple_users(dir, users):
+    # read all tweets as a string and integrate them
+
+    # input: a list of users
+    # output: a dictionary, keys: users, values: tweets after stemming
+    documents = []
+    documents_stemmed = []
+    for user in users:
+        document = read_file_as_str(dir, user['_id'])
+        documents.append(document)
+    for doc in documents:
+        tokens = get_tokens(doc)
+        filtered_tokens = [w for w in tokens if w not in stopwords.words('english')]
+        stemmer = PorterStemmer()
+        stemmed = stem_tokens(filtered_tokens, stemmer)
+        documents_stemmed.append(stemmed)
+    return documents_stemmed
+
+
+def read_file_as_str(dir, user):
+    if not os.path.isfile('output/' + dir + '/' + user + "_user_timeline.txt"):
+        raise TypeError('output/' + dir + '/' + user + "_user_timeline.txt" + " does not exist!")
+    all_the_text = open('output/' + dir + '/' + user + "_user_timeline.txt").read()
+    return all_the_text
 
 
 def get_tokens(text):
@@ -21,62 +64,3 @@ def stem_tokens(tokens, stemmer):
     for item in tokens:
         stemmed.append(stemmer.stem(item))
     return stemmed
-
-
-def chn_seg(text):
-    words = pseg.cut(text)
-    return words
-
-
-def eng_preprocessing_single_user(user):
-    # read a set of tweets from a single user
-
-    # input: username
-    # output: a list with tweets after stemming
-    tweets = []
-    for line in open('output/' + user + "_user_timeline.txt"):
-        line_filtered = re.sub('"', '', line)
-        tweets.append(line_filtered)
-    f = open('output/' + user + "_stemmed.txt", "w")
-    tweets_stemmed = []
-    for tweet in tweets:
-        output = ""
-        tokens = get_tokens(tweet)
-        filtered = [w for w in tokens if not w in stopwords.words('english')]
-        stemmer = PorterStemmer()
-        stemmed = stem_tokens(filtered, stemmer)
-        for stem in stemmed:
-            output = output + stem + " "
-        f.write(output + " \n")
-        tweets_stemmed.append(output)
-    f.close()
-    return tweets_stemmed
-
-
-def eng_preprocessing_multiple_users(users):
-    # read all tweets as a string and integrate them
-
-    # input: a list of users
-    # output: a dictionary, keys: users, values: tweets after stemming
-    documents = {}
-    documents_stemmed = {}
-    for user in users:
-        document = read_file_as_str(user)
-        documents[user] = document
-    for user in documents.keys():
-        output = ""
-        tokens = get_tokens(documents[user])
-        filtered = [w for w in tokens if not w in stopwords.words('english')]
-        stemmer = PorterStemmer()
-        stemmed = stem_tokens(filtered, stemmer)
-        for stem in stemmed:
-            output = output + stem + " "
-        documents_stemmed[user] = output
-    return documents_stemmed
-
-
-def read_file_as_str(user):
-    if not os.path.isfile('output/' + user + "user_timeline.txt"):
-        raise TypeError('output/' + user + "user_timeline.txt" + " does not exist!")
-    all_the_text = open('output/' + user + "user_timeline.txt").read()
-    return all_the_text

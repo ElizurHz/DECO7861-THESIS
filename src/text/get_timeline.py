@@ -2,6 +2,7 @@ import sys
 sys.path.append("..")
 import json
 import re
+import time
 from tweepy import Cursor
 from twitter_client import get_twitter_client
 from pymongo import *
@@ -19,7 +20,7 @@ def remove_emoji(data):
 '''
 
 
-def get_timeline(user, count):
+def get_timeline(dir, user, count):
     client = get_twitter_client()
     emoji = re.compile(u'['
     u'\U0001F300-\U0001F5FF'
@@ -30,7 +31,7 @@ def get_timeline(user, count):
     link = re.compile(u'[a-zA-z]+://[^\s]*')
     patt = re.compile(
         u'([\u2600-\u27BF])|([\uD83C][\uDF00-\uDFFF])|([\uD83D][\uDC00-\uDE4F])|([\uD83D][\uDE80-\uDEFF])')
-    with open('output/' + user + '_user_timeline.txt', "w") as f:
+    with open('output/' + dir + '/' + user + '_user_timeline.txt', "wb") as f:
         for status in Cursor(client.user_timeline, screen_name=user).items(count):
             tweet_filtered = emoji.sub("", status.text)
             tweet_filtered = link.sub("", tweet_filtered)
@@ -39,7 +40,8 @@ def get_timeline(user, count):
             tweet_filtered = re.sub('#', '', tweet_filtered)
             tweet_filtered = re.sub('@', '', tweet_filtered)
             tweet_filtered = re.sub('\n', '', tweet_filtered)
-            f.write(json.dumps(tweet_filtered) + "\n")
+            f.write(json.dumps(tweet_filtered).encode('utf-8'))
+            f.write(b"\n")
     f.close()
 
 
@@ -47,7 +49,15 @@ if __name__ == '__main__':
     '''
     Separate the part of getting data from Twitter
     '''
-    # user = "LFC"
-    # get_timeline(user, 100)
+    # user = "Frodan"
+    # get_timeline('hs', user, 100)
 
     # get users from database
+    client = MongoClient()
+    db = client['twitter']
+    collection = db['list_members_h_s']
+
+    for user in collection.find(no_cursor_timeout=True):
+        get_timeline('hs', user['_id'], 100)
+        print("The timeline of " + user['_id'] + " has been fetched.")
+        time.sleep(61)

@@ -2,47 +2,219 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c022f3b-fd90-4b8a-a013-d8b278b2cf57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/CPM.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/cm_network.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/draw_raw_network.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/get_links.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/louvain.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/network_construction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/output/4-clique_output.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/output/rv-4-cliques-output.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/get_timeline.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/LFC_stemmed.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/LFC_user_timeline.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/thinkB329_user_timeline.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/user_timeline_LFC.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/text_mining.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/text_preprocessing.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/4-clique_output.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CPM.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/LFC_stemmed.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cm_network.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/draw_raw_network.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/get_links.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/get_timeline.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/get_tweets.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gugudan_ioi_dia-gephi.gephi" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/link_gugudan_ioi_dia-filtered.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/link_gugudan_ioi_dia-original.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/louvain.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/network-gugudan_IOI_DIA.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/network_construction.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/text_clustering.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/user_timeline_LFC.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/word_seg.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/get_members.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/HS group.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/LDA.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Amaz_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ArchonAmnesiac_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ArchonBackspace_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Artosis_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Blizzard_Ent_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/CelestialSinn_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ChanmanV_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Cloud9_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/DDaHyoNi_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Deer_Nadia_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/DrHippi_VP_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/DreamHack_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ESLHearthstone_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ESL_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Ekop_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/F2K_J4CKIE_HS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/FaramirHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/FibonacciHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ForsenSC2_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Frodan_stemmed.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Frodan_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/G2Lifecoach_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/G2Rdu_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/G2Thijs_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/G2esports_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/GFE_TerrenceM_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/GnimshTV_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/GosuGamersHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/GreenSheepHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/HS_Orange_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/HearthStats_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Hearthpwn_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/HotformHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/IMTHyped_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/JABLOL_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/KitkatzHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Kolento_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/KranichHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Kripparrian_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LG_Fr0zen_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LG_Muzzy_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LG_PHONETAP_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LiquidHearth_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LiquidNeirea_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LiquidSavjz_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Liquid_hsdog_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Liquid_monk_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/LotharHS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Maitreyaaaaa_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Mryagut_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/NaViHoej_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/NaViOstkaka_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/NaViXiXo_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Naiman_HS_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/NihilumGaming_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/ONE_Mitsuhide_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/PlayHearthstone_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/SeltzerPlease_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Silentstorm1007_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/StanCifka_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/StrifeCro_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TPG_Raven_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TeamArchon_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TeamDignitas_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TeamLiquid_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TempoEloise_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TempoGaara_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TempoKaldi_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TempoReynad_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TempoSaiyan_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Tempo_Storm_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TidesofTime_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/TrumpSC_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/WowKungen_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/Zetalot2_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/bdbrode_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/bmkibler_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/challengestone_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/coL_noxious_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/coL_superjj102_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/compLexityLive_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/firebat_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/itshafu_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/meltyTars_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/hs/viagame_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/19910329_143_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/19940221com_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/19990305_net_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/329cm_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/5REDVELVET_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/94021021com_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/94irreplaceable_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/B329_91_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/BT0305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Baeby329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/BaiduWendybar__user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Baidu_SeulgiBar_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Blovely329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/CheriSEUL0210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/ChinaJoyBar_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Cyan_Wan_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/DC_SEULGI_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Fabulous__SG_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Fascination0221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/HelloWendy0221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/IS9194_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/IreneBar__user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/IreneCastle0329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Lueur_SG_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/OpenTastes_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/OrangeBearBaby_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/PEACH__FIzz_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Pumpkin960903_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/RVMemory_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/RVSG0210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/RVSeulgi_Trans_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/RedVelvet__801_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Red_Velvet_KHJ_stemmed.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Red_Velvet_KHJ_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Red_Velvet_KHJ_user_timeline_hangul.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/RozeLente_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/SSWAN0221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Smorekiss_0801_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/TEDDYBEAR_SG_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Tongue210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Vanilla940221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/WNCJOY_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Wendy_B612_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/YERI990305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/Yeri_deok_bot_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/_gomdabang_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/_mamass__user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/adore_801_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/allcheng2_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/always0329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/aseul940210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/attract_velvet_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/babypink329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/babypink_0801_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/backhug305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/baechubot_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/bear_steps_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/bemybrownie91_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/brightmeup94_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/codenumber329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/engm_kr_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/fadein94_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/fairyfloss0305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/fairytale0801_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/film903roll_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/glace940210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/greenbell__user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/ineffablevoice_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/ipink19910329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/iridescencekr_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/iris910329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/itspring_0329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/joyriblossom_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/kangseulgi_com_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/kangseulgihk_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/kangsseulbear_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/khj_vimeo_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/kib_9194_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/kimyerim_bar_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/kimyerim_net_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/macaron_960903_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/makemejoyous93_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/maplesyrup0221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/mellifluous0305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/michelebear210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/myB_chu_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/nightly_dew_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/nle_o_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/oven1408_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/popsicle_305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/ppurpple__user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/purplefit__user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/redvelvetba_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/redvelvetdoodle_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/rosarugosa0221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/sangkeumseulgi_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/scent_0305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/secret_icecream_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/sensible_k_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/springflower305_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/ssg0210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/starblanket_91_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/stuckonyou0903_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/tangerine_bear_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/thesmurf_94_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/thinkB329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/timeto_SeulGi_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/touchinspring_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/ursaminor_0210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/velvetgasm_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/wendyS2peter_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/wenever940221_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/with_you49_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/wondrous329_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/yawningrabbit99_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/yellowbear0210_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/yeri_china_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/yerikame_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/yerisprinter_user_timeline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/output/rv/yeriyeah3051_user_timeline.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dia.json" afterPath="$PROJECT_DIR$/src/dia.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/get_list_members.py" afterPath="$PROJECT_DIR$/src/get_list_members.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gugudan.json" afterPath="$PROJECT_DIR$/src/gugudan.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/i-o-i.json" afterPath="$PROJECT_DIR$/src/i-o-i.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mongodb.py" afterPath="$PROJECT_DIR$/src/mongodb.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/to_csv.py" afterPath="$PROJECT_DIR$/src/to_csv.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/get_timeline.py" afterPath="$PROJECT_DIR$/src/text/get_timeline.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/text_mining.py" afterPath="$PROJECT_DIR$/src/text/text_mining.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/text_preprocessing.py" afterPath="$PROJECT_DIR$/src/text/text_preprocessing.py" />
     </list>
     <ignored path="DECO7861-THESIS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +237,7 @@
       <file leaf-file-name="to_csv.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/to_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -77,18 +249,8 @@
       <file leaf-file-name="mongodb.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mongodb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="network_construction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/network/network_construction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="345">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -97,21 +259,20 @@
       <file leaf-file-name="get_timeline.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+            <state relative-caret-position="120">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding>
-                <marker date="1476021327000" expanded="true" signature="940:1071" ph="..." />
-                <marker date="1476021327000" expanded="true" signature="1590:1737" ph="..." />
+                <marker date="1476061067000" expanded="true" signature="1020:1613" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_links.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/network/get_links.py">
+      <file leaf-file-name="get_members.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/text/get_members.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+            <state relative-caret-position="-30">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -120,10 +281,10 @@
       <file leaf-file-name="text_mining.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/text/text_mining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="4025">
+              <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,21 +293,11 @@
       <file leaf-file-name="text_preprocessing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/text/text_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+            <state relative-caret-position="200">
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cm_network.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/network/cm_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="26" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -178,7 +329,6 @@
         <option value="$PROJECT_DIR$/src/a2.py" />
         <option value="$PROJECT_DIR$/src/a2TF.py" />
         <option value="$PROJECT_DIR$/src/a2hits.py" />
-        <option value="$PROJECT_DIR$/src/mongodb.py" />
         <option value="$PROJECT_DIR$/src/get_tweets.py" />
         <option value="$PROJECT_DIR$/src/text_clustering_single_user.py" />
         <option value="$PROJECT_DIR$/src/get_timeline.py" />
@@ -194,8 +344,11 @@
         <option value="$PROJECT_DIR$/src/network/draw_raw_network.py" />
         <option value="$PROJECT_DIR$/src/network/network_construction.py" />
         <option value="$PROJECT_DIR$/src/network/get_links.py" />
-        <option value="$PROJECT_DIR$/src/text/text_preprocessing.py" />
+        <option value="$PROJECT_DIR$/src/text/testtfidf.py" />
+        <option value="$PROJECT_DIR$/src/mongodb.py" />
+        <option value="$PROJECT_DIR$/src/text/get_members.py" />
         <option value="$PROJECT_DIR$/src/text/get_timeline.py" />
+        <option value="$PROJECT_DIR$/src/text/text_preprocessing.py" />
         <option value="$PROJECT_DIR$/src/text/text_mining.py" />
       </list>
     </option>
@@ -308,88 +461,88 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.CPM">
-    <configuration default="false" name="get_timeline" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.text_mining">
+    <configuration default="false" name="get_timeline (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_timeline.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/get_timeline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="text_clustering_single_user" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="testtfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text_clustering_single_user.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/testtfidf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="text_clustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="text_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text_clustering.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/text_preprocessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="cm_network" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="get_members" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/network/cm_network.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/get_members.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="CPM" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="text_mining" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/network/CPM.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/text_mining.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -529,19 +682,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.get_timeline" />
-      <item index="1" class="java.lang.String" itemvalue="Python.text_clustering_single_user" />
-      <item index="2" class="java.lang.String" itemvalue="Python.text_clustering" />
-      <item index="3" class="java.lang.String" itemvalue="Python.cm_network" />
-      <item index="4" class="java.lang.String" itemvalue="Python.CPM" />
+      <item index="0" class="java.lang.String" itemvalue="Python.get_timeline (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testtfidf" />
+      <item index="2" class="java.lang.String" itemvalue="Python.text_preprocessing" />
+      <item index="3" class="java.lang.String" itemvalue="Python.get_members" />
+      <item index="4" class="java.lang.String" itemvalue="Python.text_mining" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.CPM" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cm_network" />
-        <item index="2" class="java.lang.String" itemvalue="Python.text_clustering" />
-        <item index="3" class="java.lang.String" itemvalue="Python.get_timeline" />
-        <item index="4" class="java.lang.String" itemvalue="Python.text_clustering_single_user" />
+        <item index="0" class="java.lang.String" itemvalue="Python.text_mining" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_timeline (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.get_members" />
+        <item index="3" class="java.lang.String" itemvalue="Python.text_preprocessing" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testtfidf" />
       </list>
     </recent_temporary>
   </component>
@@ -562,10 +715,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="0" width="1276" height="800" extended-state="6" />
-    <editor active="false" />
+    <frame x="4" y="0" width="1276" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -712,7 +865,7 @@
     <entry file="file://$PROJECT_DIR$/src/get_timeline.py" />
     <entry file="file://$PROJECT_DIR$/src/to_csv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -735,7 +888,7 @@
         <state relative-caret-position="50">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="47" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -745,24 +898,8 @@
         <state relative-caret-position="100">
           <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mongodb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/network_construction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +908,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#53#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -784,6 +921,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/text/testtfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mongodb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/network/get_links.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -792,31 +945,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/network/network_construction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+        <state relative-caret-position="120">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding>
-            <marker date="1476021327000" expanded="true" signature="940:1071" ph="..." />
-            <marker date="1476021327000" expanded="true" signature="1590:1737" ph="..." />
+            <marker date="1476061067000" expanded="true" signature="1020:1613" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text/get_members.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/text/text_mining.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="4025">
+          <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/text/text_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+        <state relative-caret-position="200">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
