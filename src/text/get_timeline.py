@@ -8,18 +8,6 @@ from twitter_client import get_twitter_client
 from pymongo import *
 
 
-'''
-def remove_emoji(data):
-    try:
-    # UCS-4
-        patt = re.compile(u'([\U00002600-\U000027BF])|([\U0001f300-\U0001f64F])|([\U0001f680-\U0001f6FF])')
-    except re.error:
-    # UCS-2
-        patt = re.compile(u'([\u2600-\u27BF])|([\uD83C][\uDF00-\uDFFF])|([\uD83D][\uDC00-\uDE4F])|([\uD83D][\uDE80-\uDEFF])')
-    return patt.sub('', data)
-'''
-
-
 def get_timeline(dir, user, count):
     client = get_twitter_client()
     emoji = re.compile(u'['
@@ -49,9 +37,9 @@ if __name__ == '__main__':
     '''
     Separate the part of getting data from Twitter
     '''
-    # user = "Frodan"
-    # get_timeline('hs', user, 100)
-
+    user = "firebat"
+    get_timeline('hs', user, 1000)
+    '''
     # get users from database
     client = MongoClient()
     db = client['twitter']
@@ -61,3 +49,4 @@ if __name__ == '__main__':
         get_timeline('hs', user['_id'], 100)
         print("The timeline of " + user['_id'] + " has been fetched.")
         time.sleep(61)
+    '''

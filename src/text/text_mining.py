@@ -76,6 +76,7 @@ def clustering_lda_analysis_multiple(dir, users, nodes):
     lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=3)
     print(lda.print_topics(num_topics=3, num_words=5))
 
+
 def agg_clu_single(dir, user):
     # Create Agglomerative Clustering model
     texts = preprocessing_single_user(dir, user)
@@ -97,7 +98,7 @@ def agg_clu_single(dir, user):
     print(tree)
 
     # get node ids for each cluster
-    root_list = [196, 193, 194]     # value can be changed after plotting original dendrogram
+    root_list = [194, 195, 192, 193]     # value can be changed after plotting original dendrogram
     nodes = []
     for root in root_list:
         node_list = []
@@ -152,12 +153,12 @@ def agg_clu_multiple(dir, users):
 
 
 if __name__ == '__main__':
-    '''
+
     # Single user
-    lda_analysis_single('hs', 'Frodan')
-    nodes_list = agg_clu_single('hs', 'Frodan')
+    lda_analysis_single('hs', 'firebat')
+    nodes_list = agg_clu_single('hs', 'firebat')
     for nodes in nodes_list:
-        clustering_lda_analysis_single('hs', 'Frodan', nodes)
+        clustering_lda_analysis_single('hs', 'firebat', nodes)
     '''
     # Multiple users
     client = MongoClient()
@@ -166,6 +167,7 @@ if __name__ == '__main__':
 
     lda_analysis_multiple('hs', col.find())
     nodes_list = agg_clu_multiple('hs', col.find())
+    '''
     '''
     for nodes in nodes_list:
         clustering_lda_analysis_multiple('hs', col.find(), nodes)
