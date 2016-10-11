@@ -1,12 +1,13 @@
+import numpy as np
+import itertools
 from sklearn.feature_extraction.text import *
 from text_preprocessing import *
 from gensim import models
 from gensim import corpora
 from sklearn.cluster import *
+from sklearn import metrics
 from matplotlib import pyplot as plt
 from scipy.cluster.hierarchy import dendrogram
-import numpy as np
-import itertools
 from pymongo import *
 
 def tf_idf(texts):
@@ -83,6 +84,7 @@ def agg_clu_single(dir, user):
     vectors = tf_idf(texts)
     ac = AgglomerativeClustering()
     model = ac.fit(vectors)
+    labels = model.labels_
 
     # Plotting dendrogram
     children = model.children_
@@ -105,7 +107,7 @@ def agg_clu_single(dir, user):
         node_list.append(get_all_leaves(len(vectors), root, tree, node_list))
         del node_list[-1]
         nodes.append(node_list)
-    return nodes
+    return nodes, labels
 
 
 def get_all_leaves(count, root, tree, node_list):
@@ -126,6 +128,7 @@ def agg_clu_multiple(dir, users):
     vectors = tf_idf(texts)
     ac = AgglomerativeClustering()
     model = ac.fit(vectors)
+    labels = model.labels_
 
     # Plotting dendrogram
     children = model.children_
@@ -139,7 +142,7 @@ def agg_clu_multiple(dir, users):
     ii = itertools.count(vectors.shape[0])
     tree = [{'node_id': next(ii), 'left': x[0], 'right': x[1]} for x in model.children_]
     print(tree)
-    '''
+
     # get node ids for each cluster
     root_list = [160, 163, 164]  # value can be changed after plotting original dendrogram
     nodes = []
@@ -148,25 +151,34 @@ def agg_clu_multiple(dir, users):
         node_list.append(get_all_leaves(len(vectors), root, tree, node_list))
         del node_list[-1]
         nodes.append(node_list)
-    return nodes
-    '''
+    return nodes, labels
+
+
+def silhouette_score(vectors, labels):
+    return metrics.silhouette_score(vectors, labels, metric='euclidean')
 
 
 if __name__ == '__main__':
+    texts = preprocessing_single_user('hs', 'firebat')
+    vectors = tf_idf(texts)
 
     # Single user
     lda_analysis_single('hs', 'firebat')
-    nodes_list = agg_clu_single('hs', 'firebat')
+    nodes_list, labels = agg_clu_single('hs', 'firebat')
     for nodes in nodes_list:
         clustering_lda_analysis_single('hs', 'firebat', nodes)
+    print("The Silhouette score is: " + str(silhouette_score(vectors, labels)))
     '''
     # Multiple users
     client = MongoClient()
     db = client['twitter']
     col = db['list_members_h_s']
 
-    lda_analysis_multiple('hs', col.find())
-    nodes_list = agg_clu_multiple('hs', col.find())
+    # lda_analysis_multiple('hs', col.find())
+    nodes_list, labels = agg_clu_multiple('hs', col.find())
+    print(nodes_list)
+
+    print("The Silhouette score is: " + str(silhouette_score(vectors, labels)))
     '''
     '''
     for nodes in nodes_list:

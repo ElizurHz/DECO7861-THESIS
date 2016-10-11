@@ -1,0 +1,14 @@
+rv:
+The accuracy computed from confusion matrix is 0.8096109839816934
+NMI: 0.412397606953
+# AMI: 0.367490546406
+
+gugudan_ioi_dia:
+The accuracy computed from confusion matrix is 0.650887573964497
+NMI: 0.456055367351
+# AMI: -6.29906370831e-07
+
+gugudan_ioi_dia(adjusted):
+The accuracy computed from confusion matrix is 0.7197802197802198
+NMI: 0.507144456133
+# AMI: -4.99976412285e-06

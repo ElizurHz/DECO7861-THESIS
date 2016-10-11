@@ -13,3 +13,4 @@ nodes to cut: 1988, 1992, 1979, 1986, 1991, 1994
 [(0, '0.006*batston + 0.006*player + 0.006*ban + 0.005*commun + 0.005*vote'), (1, '0.006*colcrane333 + 0.006*invit + 0.006*batston + 0.005*might + 0.005*best'), (2, '0.006*vote + 0.006*batston + 0.005*1 + 0.005*card + 0.005*bmkibler')]
 
 
+Silhouette score: 0.429417620769

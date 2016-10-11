@@ -4,7 +4,9 @@
 
 nodes to cut: 194, 195, 192, 193
 
-[(0, '0.010*invit + 0.010*futur + 0.009*batston + 0.009*3rd + 0.008*vote'), (1, '0.011*tpgness + 0.011*invit + 0.010*5th + 0.010*batston + 0.010*sometim'), (2, '0.011*batston + 0.011*best + 0.010*2 + 0.010*kevindunn07 + 0.009*ye')]
+
 [(0, '0.022*hearthston + 0.019*stream + 0.015*today + 0.011*let + 0.011*random'), (1, '0.015*chang + 0.013*card + 0.013*hour + 0.013*check + 0.013*come'), (2, '0.026*deck + 0.018*fatigu + 0.017*stream + 0.016*playhearthston + 0.016*preshow')]
 [(0, '0.026*invit + 0.025*batston + 0.024*final + 0.018*get + 0.017*6'), (1, '0.013*vote + 0.012*temporeynad + 0.012*yesterday + 0.012*thing + 0.012*commun'), (2, '0.019*tournament + 0.016*tidesoftim + 0.016*lubenhristovv + 0.016*moonehz + 0.014*player')]
 [(0, '0.021*spici + 0.018*youtub + 0.017*hcthebaka + 0.017*lul + 0.017*back'), (1, '0.015*gadget + 0.015*actual + 0.015*1 + 0.014*rogu + 0.014*hsth3rat'), (2, '0.024*stream + 0.014*playhearthston + 0.014*nvidia + 0.014*action + 0.014*twitch')]
+
+The Silhouette score is: 0.356108806981
