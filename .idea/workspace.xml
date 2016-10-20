@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c022f3b-fd90-4b8a-a013-d8b278b2cf57" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/network/evaluation.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/network/cm_network.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/text/output/firebat(100).txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/text/louvain_weighted.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TF-IDF.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dia.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/gugudan.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/i-o-i.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/get_list_members.py" afterPath="$PROJECT_DIR$/src/network/get_list_members.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/output/HS group.txt" afterPath="$PROJECT_DIR$/src/text/output/HS group.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/output/firebat(1000).txt" afterPath="$PROJECT_DIR$/src/text/output/firebat(1000).txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mongodb.py" afterPath="$PROJECT_DIR$/src/mongodb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/evaluation.py" afterPath="$PROJECT_DIR$/src/network/evaluation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/get_links.py" afterPath="$PROJECT_DIR$/src/network/get_links.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/louvain.py" afterPath="$PROJECT_DIR$/src/network/louvain.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/network/network_construction.py" afterPath="$PROJECT_DIR$/src/network/network_construction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/get_timeline.py" afterPath="$PROJECT_DIR$/src/text/get_timeline.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/text_mining.py" afterPath="$PROJECT_DIR$/src/text/text_mining.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/text/text_preprocessing.py" afterPath="$PROJECT_DIR$/src/text/text_preprocessing.py" />
     </list>
     <ignored path="DECO7861-THESIS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,35 +40,9 @@
       <file leaf-file-name="text_mining.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/text/text_mining.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="161" column="52" selection-start-line="161" selection-start-column="52" selection-end-line="161" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text_preprocessing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/text/text_preprocessing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluation.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/network/evaluation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-955">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="470">
+              <caret line="192" column="50" selection-start-line="192" selection-start-column="50" selection-end-line="192" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,8 +50,75 @@
       <file leaf-file-name="network_construction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/network/network_construction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="1" selection-end-column="21" />
+            <state relative-caret-position="-55">
+              <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/network/evaluation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="louvain_weighted.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/text/louvain_weighted.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="text_preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/text/text_preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="545">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_single_timeline.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/text/get_single_timeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_timeline.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+              <folding>
+                <marker date="1476917753000" expanded="true" signature="1372:1436" ph="'''...'''" />
+                <marker date="1476917753000" expanded="true" signature="1618:1758" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongodb.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mongodb.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="925">
+              <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -96,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/draw_raw_network.py" />
         <option value="$PROJECT_DIR$/src/testCPMdrawing.py" />
         <option value="$PROJECT_DIR$/src/get_links.py" />
-        <option value="$PROJECT_DIR$/src/get_list_members.py" />
         <option value="$PROJECT_DIR$/src/cm_network.py" />
         <option value="$PROJECT_DIR$/src/a2.py" />
         <option value="$PROJECT_DIR$/src/a2TF.py" />
@@ -113,18 +162,21 @@
         <option value="$PROJECT_DIR$/src/text_preprocessing.py" />
         <option value="$PROJECT_DIR$/src/text_mining.py" />
         <option value="$PROJECT_DIR$/src/network/draw_raw_network.py" />
-        <option value="$PROJECT_DIR$/src/network/network_construction.py" />
-        <option value="$PROJECT_DIR$/src/network/get_links.py" />
         <option value="$PROJECT_DIR$/src/text/testtfidf.py" />
-        <option value="$PROJECT_DIR$/src/mongodb.py" />
         <option value="$PROJECT_DIR$/src/text/get_members.py" />
+        <option value="$PROJECT_DIR$/src/network/cm_network.py" />
+        <option value="$PROJECT_DIR$/src/eval_without_gt.py" />
+        <option value="$PROJECT_DIR$/src/network/evaluation.py" />
+        <option value="$PROJECT_DIR$/src/get_list_members.py" />
+        <option value="$PROJECT_DIR$/src/mongodb.py" />
+        <option value="$PROJECT_DIR$/src/network/get_links.py" />
         <option value="$PROJECT_DIR$/src/text/text_preprocessing.py" />
+        <option value="$PROJECT_DIR$/src/text/text_mining.py" />
+        <option value="$PROJECT_DIR$/src/network/louvain.py" />
         <option value="$PROJECT_DIR$/src/text/get_single_timeline.py" />
         <option value="$PROJECT_DIR$/src/text/get_timeline.py" />
-        <option value="$PROJECT_DIR$/src/network/cm_network.py" />
-        <option value="$PROJECT_DIR$/src/network/evaluation.py" />
-        <option value="$PROJECT_DIR$/src/eval_without_gt.py" />
-        <option value="$PROJECT_DIR$/src/text/text_mining.py" />
+        <option value="$PROJECT_DIR$/src/network/network_construction.py" />
+        <option value="$PROJECT_DIR$/src/text/louvain_weighted.py" />
       </list>
     </option>
   </component>
@@ -158,7 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -229,44 +281,50 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.text_mining">
-    <configuration default="false" name="get_timeline (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/network" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.louvain_weighted">
+    <configuration default="false" name="louvain" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/network" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/get_timeline.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/network/louvain.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="text_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="get_links" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/network" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/text_preprocessing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/network/get_links.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -288,7 +346,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="text_mining" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="louvain_weighted" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -300,24 +358,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/text_mining.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/louvain_weighted.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="get_timeline" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/text" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DECO7861-THESIS" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/network/evaluation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text/get_timeline.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -475,19 +533,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.get_single_timeline" />
-      <item index="1" class="java.lang.String" itemvalue="Python.get_timeline (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.text_preprocessing" />
+      <item index="1" class="java.lang.String" itemvalue="Python.louvain" />
+      <item index="2" class="java.lang.String" itemvalue="Python.get_links" />
       <item index="3" class="java.lang.String" itemvalue="Python.get_members" />
-      <item index="4" class="java.lang.String" itemvalue="Python.text_mining" />
-      <item index="5" class="java.lang.String" itemvalue="Python.evaluation" />
+      <item index="4" class="java.lang.String" itemvalue="Python.louvain_weighted" />
+      <item index="5" class="java.lang.String" itemvalue="Python.get_timeline" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.text_mining" />
-        <item index="1" class="java.lang.String" itemvalue="Python.evaluation" />
-        <item index="2" class="java.lang.String" itemvalue="Python.get_timeline (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.get_members" />
-        <item index="4" class="java.lang.String" itemvalue="Python.text_preprocessing" />
+        <item index="0" class="java.lang.String" itemvalue="Python.louvain_weighted" />
+        <item index="1" class="java.lang.String" itemvalue="Python.get_timeline" />
+        <item index="2" class="java.lang.String" itemvalue="Python.louvain" />
+        <item index="3" class="java.lang.String" itemvalue="Python.get_links" />
+        <item index="4" class="java.lang.String" itemvalue="Python.get_members" />
       </list>
     </recent_temporary>
   </component>
@@ -508,15 +566,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="0" width="1276" height="800" extended-state="1" />
-    <editor active="false" />
+    <frame x="4" y="0" width="1276" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23197491" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -546,10 +604,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/text_mining.py" />
-    <entry file="file://$PROJECT_DIR$/src/text_preprocessing.py" />
     <entry file="file://$PROJECT_DIR$/src/get_timeline.py" />
-    <entry file="file://$PROJECT_DIR$/src/get_list_members.py">
+    <entry file="file://$PROJECT_DIR$/src/network/get_list_members.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -572,22 +628,9 @@
     <entry file="file://$PROJECT_DIR$/src/network.py" />
     <entry file="file://$PROJECT_DIR$/src/draw_network.py" />
     <entry file="file://$PROJECT_DIR$/src/testCPMdrawing.py" />
-    <entry file="file://$PROJECT_DIR$/src/get_list_members.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/draw_raw_network.py" />
     <entry file="file://$PROJECT_DIR$/src/a2.py" />
-    <entry file="file://$PROJECT_DIR$/src/TF-IDF.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TF-IDF.py" />
     <entry file="file://$PROJECT_DIR$/src/cm_network.py" />
     <entry file="file://$PROJECT_DIR$/src/get_links.py" />
     <entry file="file://$PROJECT_DIR$/src/a2TF.py" />
@@ -595,7 +638,7 @@
     <entry file="file://$PROJECT_DIR$/src/get_tweets.py" />
     <entry file="file://$PROJECT_DIR$/src/thinkB329_user_timeline.txt" />
     <entry file="file://$PROJECT_DIR$/src/text_clustering_single_user.py" />
-    <entry file="file://$PROJECT_DIR$/src/rv.json">
+    <entry file="file://$PROJECT_DIR$/src/network/rv.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -617,6 +660,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/text/testtfidf.py" />
+    <entry file="file://$PROJECT_DIR$/src/network/cm_network.py" />
+    <entry file="file://$PROJECT_DIR$/src/eval_without_gt.py" />
+    <entry file="file://$PROJECT_DIR$/src/network/get_list_members.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/to_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/network/CPM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -626,98 +696,103 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/network/draw_raw_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="50">
           <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/louvain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/text/testtfidf.py" />
     <entry file="file://$PROJECT_DIR$/src/network/get_links.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        <state relative-caret-position="250">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/text/get_members.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="-255">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/text/get_single_timeline.py">
+    <entry file="file://$PROJECT_DIR$/src/network/louvain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/network/cm_network.py" />
-    <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        <state relative-caret-position="25">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="61" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mongodb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/to_csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eval_without_gt.py" />
-    <entry file="file://$PROJECT_DIR$/src/network/network_construction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="925">
+          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/text/text_preprocessing.py">
+    <entry file="file://$PROJECT_DIR$/src/text/get_single_timeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="250">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/text/text_mining.py">
+    <entry file="file://$PROJECT_DIR$/src/text/get_timeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="161" column="52" selection-start-line="161" selection-start-column="52" selection-end-line="161" selection-end-column="52" />
+        <state relative-caret-position="70">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1476917753000" expanded="true" signature="1372:1436" ph="'''...'''" />
+            <marker date="1476917753000" expanded="true" signature="1618:1758" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/network/evaluation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-955">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text/text_mining.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="192" column="50" selection-start-line="192" selection-start-column="50" selection-end-line="192" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text/text_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/network/network_construction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text/louvain_weighted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

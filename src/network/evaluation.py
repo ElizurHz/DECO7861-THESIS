@@ -40,6 +40,7 @@ def ami(mod_class, exp_class):
 def nmi(mod_class, exp_class):
     return normalized_mutual_info_score(exp_class, mod_class)
 
+
 if __name__ == '__main__':
     mod_class, exp_class = read_data('rv')
     accuracy = confusion_matrix(mod_class, exp_class)

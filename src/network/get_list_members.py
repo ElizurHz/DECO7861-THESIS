@@ -6,7 +6,7 @@ lists = ['gugudan', 'dia', 'i-o-i']
 rv_list = ['rv']
 api = get_twitter_client()
 
-for list in rv_list:
+for list in lists:
     members = api.list_members('elizurhz', list, count=200)
     with open(list + '.json', 'w') as f:
         for member in members:
@@ -14,7 +14,7 @@ for list in rv_list:
             screen_name = member.screen_name
             id_str = member.id_str
             friends_count = member.friends_count
-            new_profile = ListMembersRV(
+            new_profile = ListMembers(
                 screen_name=screen_name,
                 id_str=id_str,
                 friends_count=friends_count

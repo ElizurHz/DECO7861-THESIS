@@ -37,8 +37,9 @@ if __name__ == '__main__':
     '''
     Separate the part of getting data from Twitter
     '''
-    user = "firebat"
-    get_timeline('hs', user, 1000)
+
+    user = "Hoej_HS"
+    get_timeline('hs2', user, 100)
     '''
     # get users from database
     client = MongoClient()
@@ -46,7 +47,7 @@ if __name__ == '__main__':
     collection = db['list_members_h_s']
 
     for user in collection.find(no_cursor_timeout=True):
-        get_timeline('hs', user['_id'], 100)
+        get_timeline('hs2', user['_id'], 100)
         print("The timeline of " + user['_id'] + " has been fetched.")
         time.sleep(61)
     '''

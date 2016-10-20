@@ -1,7 +1,9 @@
+import sys
+sys.path.append("..")
 import numpy as np
 import itertools
 from sklearn.feature_extraction.text import *
-from text_preprocessing import *
+from text.text_preprocessing import *
 from gensim import models
 from gensim import corpora
 from sklearn.cluster import *
@@ -13,6 +15,7 @@ from pymongo import *
 def tf_idf(texts):
     wordset = ""
     textset = []
+    # join the words
     for text in texts:
         for word in text:
             wordset = wordset + word + " "
@@ -20,17 +23,23 @@ def tf_idf(texts):
     vectorizer = CountVectorizer()
     transformer = TfidfTransformer()
     tf_idf = transformer.fit_transform(vectorizer.fit_transform(textset))
-    # word = vectorizer.get_feature_names()
+    words = vectorizer.get_feature_names()
     weight = tf_idf.toarray()
     '''
     for i in range(len(weight)):
         print("---------THE TF-IDF WEIGHT OF NO.", i, " TEXT-----------")
-        for j in range(len(word)):
-            print(word[j], weight[i][j])
+        for j in range(len(words)):
+            print(words[j], weight[i][j])
     '''
-    return weight
+    return weight, words
 
 
+def get_descriptions(weight, words, num, username):
+    print("---------THE TF-IDF WEIGHT FOR ", username[num], "-----------")
+    for i in range(len(words)):
+        print(words[i], weight[num][i])
+
+'''
 def tfidf_gensim(dictionary, texts):
     tf = [dictionary.doc2bow(text) for text in texts]
     tfidf_model = models.TfidfModel(tf)
@@ -81,7 +90,7 @@ def clustering_lda_analysis_multiple(dir, users, nodes):
 def agg_clu_single(dir, user):
     # Create Agglomerative Clustering model
     texts = preprocessing_single_user(dir, user)
-    vectors = tf_idf(texts)
+    vectors, words = tf_idf(texts)
     ac = AgglomerativeClustering()
     model = ac.fit(vectors)
     labels = model.labels_
@@ -108,7 +117,7 @@ def agg_clu_single(dir, user):
         del node_list[-1]
         nodes.append(node_list)
     return nodes, labels
-
+'''
 
 def get_all_leaves(count, root, tree, node_list):
     if root < count:
@@ -124,8 +133,8 @@ def get_all_leaves(count, root, tree, node_list):
 
 def agg_clu_multiple(dir, users):
     # Create Agglomerative Clustering model
-    texts = preprocessing_multiple_users(dir, users)
-    vectors = tf_idf(texts)
+    texts, username = preprocessing_multiple_users(dir, users)
+    vectors, words = tf_idf(texts)
     ac = AgglomerativeClustering()
     model = ac.fit(vectors)
     labels = model.labels_
@@ -159,6 +168,7 @@ def silhouette_score(vectors, labels):
 
 
 if __name__ == '__main__':
+    '''
     texts = preprocessing_single_user('hs', 'firebat')
     vectors = tf_idf(texts)
 
@@ -174,13 +184,12 @@ if __name__ == '__main__':
     db = client['twitter']
     col = db['list_members_h_s']
 
-    # lda_analysis_multiple('hs', col.find())
+    texts, username = preprocessing_multiple_users('hs', col.find())
+    vectors, words = tf_idf(texts)
+
     nodes_list, labels = agg_clu_multiple('hs', col.find())
     print(nodes_list)
 
+    get_descriptions(vectors, words, 69, username)
+
     print("The Silhouette score is: " + str(silhouette_score(vectors, labels)))
-    '''
-    '''
-    for nodes in nodes_list:
-        clustering_lda_analysis_multiple('hs', col.find(), nodes)
-    '''

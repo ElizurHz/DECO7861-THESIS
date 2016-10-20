@@ -8,4 +8,4 @@ and overwriting existing files when testing the following algorithms
 And it is also convenient for updating following algorithms.
 '''
 
-get_links('twitter', 'links_r_v')
+get_links('twitter', 'list_members_h_s')

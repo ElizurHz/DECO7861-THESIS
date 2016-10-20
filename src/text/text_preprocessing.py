@@ -28,19 +28,21 @@ def preprocessing_multiple_users(dir, users):
     # read all tweets as a string and integrate them
 
     # input: a list of users
-    # output: a dictionary, keys: users, values: tweets after stemming
+    # output: a list which contains lists with words after tokenize and stemming
     documents = []
     documents_stemmed = []
+    username = []
     for user in users:
         document = read_file_as_str(dir, user['_id'])
         documents.append(document)
+        username.append(user['_id'])
     for doc in documents:
         tokens = get_tokens(doc)
         filtered_tokens = [w for w in tokens if w not in stopwords.words('english')]
         stemmer = PorterStemmer()
         stemmed = stem_tokens(filtered_tokens, stemmer)
         documents_stemmed.append(stemmed)
-    return documents_stemmed
+    return documents_stemmed, username
 
 
 def read_file_as_str(dir, user):
