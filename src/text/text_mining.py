@@ -39,30 +39,34 @@ def get_descriptions(weight, words, num, username):
     for i in range(len(words)):
         print(words[i], weight[num][i])
 
-'''
+
 def tfidf_gensim(dictionary, texts):
     tf = [dictionary.doc2bow(text) for text in texts]
     tfidf_model = models.TfidfModel(tf)
     tfidf = tfidf_model[tf]
     return tfidf
 
-
+'''
 def lda_analysis_single(dir, user):
+    # texts: a list of Tweets
     texts = preprocessing_single_user(dir, user)
     dictionary = corpora.Dictionary(texts)
-    tfidf = tfidf_gensim(dictionary, texts)
-    lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=3)
-    print(lda.print_topics(num_topics=3, num_words=5))
+    lda = [dictionary.doc2bow(text) for text in texts]
+    lda = models.ldamodel.LdaModel(lda, id2word=dictionary, num_topics=100)
+    # print(lda.print_topics(num_topics=100, num_words=5))
+    return lda
 
 
 def lda_analysis_multiple(dir, users):
-    texts = preprocessing_multiple_users(dir, users)
+    texts = preprocessing_multiple_user(dir, users)
     dictionary = corpora.Dictionary(texts)
-    tfidf = tfidf_gensim(dictionary, texts)
-    lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=3)
-    print(lda.print_topics(num_topics=3, num_words=5))
+    lda = [dictionary.doc2bow(text) for text in texts]
+    lda = models.ldamodel.LdaModel(lda, id2word=dictionary, num_topics=100)
+    # print(lda.print_topics(num_topics=100, num_words=5))
+    return lda
+'''
 
-
+'''
 def clustering_lda_analysis_single(dir, user, nodes):
     texts = preprocessing_single_user(dir, user)
     clustering_texts = []
@@ -71,7 +75,7 @@ def clustering_lda_analysis_single(dir, user, nodes):
         clustering_texts.append(text)
     dictionary = corpora.Dictionary(clustering_texts)
     tfidf = tfidf_gensim(dictionary, clustering_texts)
-    lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=3)
+    lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=100)
     print(lda.print_topics(num_topics=3, num_words=5))
 
 
@@ -83,9 +87,47 @@ def clustering_lda_analysis_multiple(dir, users, nodes):
         clustering_texts.append(text)
     dictionary = corpora.Dictionary(clustering_texts)
     tfidf = tfidf_gensim(dictionary, clustering_texts)
-    lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=3)
+    lda = models.ldamodel.LdaModel(tfidf, id2word=dictionary, num_topics=100)
     print(lda.print_topics(num_topics=3, num_words=5))
 
+
+def lda(dir, users):
+    texts, username = preprocessing_multiple_users(dir, users)
+    dictionary = corpora.Dictionary(texts)
+    lda_text = [dictionary.doc2bow(text) for text in texts]
+    model = models.ldamodel.LdaModel(lda_text, id2word=dictionary, num_topics=100)
+    topics = [model[t] for t in lda_text]
+    # print(topics)
+    # print(len(topics))
+    lda_vectors = []
+    for user in topics:
+        user_list = []
+        for topic, weight in user:
+            user_list.append(weight)
+        #user_array = np.array(user_list)
+        lda_vectors.append(user_list)
+    # lda_vectors = np.array(lda_vectors)
+    # print(lda_vectors)
+    #print(lda_vectors)
+    #print(type(lda_vectors[0]))
+
+    ac = AgglomerativeClustering()
+    model = ac.fit(lda_vectors)
+    # labels = model.labels_
+
+    # Plotting dendrogram
+    children = model.children_
+    distance = np.arange(children.shape[0])
+    no_of_observations = np.arange(2, children.shape[0] + 2)
+    linkage_matrix = np.column_stack([children, distance, no_of_observations]).astype(float)
+    dendrogram(linkage_matrix)
+    plt.show()
+
+    # Construct the dendrogram tree
+    ii = itertools.count(lda_vectors.shape[0])
+    tree = [{'node_id': next(ii), 'left': x[0], 'right': x[1]} for x in model.children_]
+    print(tree)
+'''
 
 def agg_clu_single(dir, user):
     # Create Agglomerative Clustering model
@@ -117,7 +159,7 @@ def agg_clu_single(dir, user):
         del node_list[-1]
         nodes.append(node_list)
     return nodes, labels
-'''
+
 
 def get_all_leaves(count, root, tree, node_list):
     if root < count:
@@ -131,10 +173,8 @@ def get_all_leaves(count, root, tree, node_list):
         get_all_leaves(count, current_node['right'], tree, node_list)
 
 
-def agg_clu_multiple(dir, users):
+def agg_clu_multiple(vectors):
     # Create Agglomerative Clustering model
-    texts, username = preprocessing_multiple_users(dir, users)
-    vectors, words = tf_idf(texts)
     ac = AgglomerativeClustering()
     model = ac.fit(vectors)
     labels = model.labels_
@@ -168,28 +208,13 @@ def silhouette_score(vectors, labels):
 
 
 if __name__ == '__main__':
-    '''
-    texts = preprocessing_single_user('hs', 'firebat')
-    vectors = tf_idf(texts)
-
-    # Single user
-    lda_analysis_single('hs', 'firebat')
-    nodes_list, labels = agg_clu_single('hs', 'firebat')
-    for nodes in nodes_list:
-        clustering_lda_analysis_single('hs', 'firebat', nodes)
-    print("The Silhouette score is: " + str(silhouette_score(vectors, labels)))
-    '''
-    # Multiple users
     client = MongoClient()
     db = client['twitter']
     col = db['list_members_h_s']
 
-    texts, username = preprocessing_multiple_users('hs', col.find())
+    texts, username = preprocessing_multiple_users('hs2', col.find())
     vectors, words = tf_idf(texts)
-
-    nodes_list, labels = agg_clu_multiple('hs', col.find())
-    print(nodes_list)
-
-    get_descriptions(vectors, words, 69, username)
+    nodes, labels = agg_clu_multiple(vectors)
 
     print("The Silhouette score is: " + str(silhouette_score(vectors, labels)))
+
